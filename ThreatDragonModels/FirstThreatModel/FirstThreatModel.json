@@ -149,16 +149,26 @@
               "angle": 0,
               "id": "1bd2b63b-ac34-4593-907e-046ff5a68f92",
               "z": 5,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Denial of Service",
+                  "type": "Denial of service",
+                  "mitigation": "(1) Harden the TCP/IP stack by applying the appropriate registry settings to \n      increase the size of the TCP connection queue.\n(2) Decrease the connection establishment period.\n(3) Employ dynamic backlog mechanisms to ensure that the connection queue is \n      never exhausted.\n(4) Use a network Intrusion Detection System (IDS).",
+                  "description": "It will deny only the services of the resource."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
